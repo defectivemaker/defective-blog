@@ -16,3 +16,6 @@ To add mermaid.js compatibility
 Follow this https://gohugo.io/content-management/diagrams/#mermaid-diagrams
 
 But add the snippet for content template into extend-head.html
+
+
+In order to sign into this github, I have to eval "$(ssh-agent -s)" and add ssh-add ~/.ssh/.... key
