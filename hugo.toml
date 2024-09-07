@@ -4,7 +4,7 @@ title = "defectivemaker"
 
 timeout = 700
 
-googleAnalytics = G-RHCWKYCSSJ
+googleAnalytics = "G-RHCWKYCSSJ"
 
 [params.footer]
   showThemeAttribution = false
