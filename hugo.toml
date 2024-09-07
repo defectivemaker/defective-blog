@@ -2,7 +2,7 @@ baseURL = "https://defectivemaker.com"
 languageCode = "en-us"
 title = "defectivemaker"
 
-timeout: 700
+timeout = 700
 
 [params.footer]
   showThemeAttribution = false
