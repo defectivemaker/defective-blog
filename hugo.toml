@@ -1,0 +1,65 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+title = "defectivemaker"
+
+[params.footer]
+  showThemeAttribution = false
+  showCopyright = false
+
+
+[module]
+  [[module.imports]]
+    path = "github.com/jpanther/congo/v2"
+
+[params]
+  # Congo theme parameters
+  colorScheme = "ocean"
+  defaultAppearance = "dark"
+  autoSwitchAppearance = true
+
+
+  [params.header]
+    layout = "basic"
+
+[params.homepage]
+    layout = "profile"
+    showRecent = true
+
+
+  [params.article]
+    showDate = true
+    showAuthor = true
+    showBreadcrumbs = true
+    showDraftLabel = true
+    showEdit = false
+    editURL = "https://github.com/yourusername/your-repo/tree/main/content"
+    editAppendPath = true
+    showHeadingAnchors = true
+    showPagination = true
+    invertPagination = false
+    showReadingTime = true
+    showTableOfContents = true
+    showTaxonomies = false
+    showWordCount = true
+    showComments = false
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 40
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 40
+
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.highlight]
+    style = "github"
+
+    

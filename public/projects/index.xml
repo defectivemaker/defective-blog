@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on defectivemaker</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on defectivemaker</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Sep 2023 09:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 1: My Awesome Web App</title>
+      <link>http://localhost:1313/projects/project-1/</link>
+      <pubDate>Thu, 07 Sep 2023 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/project-1/</guid>
+      <description>&lt;h2 id=&#34;project-overview&#34; class=&#34;relative group&#34;&gt;Project Overview &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#project-overview&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;This project is a web application that [brief description of what the app does].&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-features&#34; class=&#34;relative group&#34;&gt;Key Features &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#key-features&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;li&gt;Feature 3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;technologies-used&#34; class=&#34;relative group&#34;&gt;Technologies Used &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#technologies-used&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;React for the frontend&lt;/li&gt;&#xA;&lt;li&gt;Node.js and Express for the backend&lt;/li&gt;&#xA;&lt;li&gt;MongoDB for database&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;challenges-and-solutions&#34; class=&#34;relative group&#34;&gt;Challenges and Solutions &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#challenges-and-solutions&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;[Describe any significant challenges you faced and how you overcame them]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,1056 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="en-us"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>Simulating gambling tactics &middot; defectivemaker</title>
+    <meta name="title" content="Simulating gambling tactics &middot; defectivemaker" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.48535ac70d65dd8e3abda7c887626471b24eff632b187d71cbf4ff671eaa0221.css"
+    integrity="sha256-SFNaxw1l3Y46vafIh2JkcbJO/2MrGH1xy/T/Zx6qAiE="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        This is a story about one time when I was and I stumbled upon a new domain of interest. This interest was related to gambling and it occured when a friend of mine told me of a “foolproof” betting strategy for the game of roulette.
+The gambling strategy #For any games where there is a near 50% chance of winning and where winning doubles your money and losing loses all your money you do this: First bet $1, if you lose this bet instead of betting $1, on the next turn you bet $2 (double the previous bet), if you lose again, bet $4, then $8 etc. If you win however, you restart the betting number and bet $1 again.
+So the tactic is basically double-down each time you lose. In the above scenario, if you lose the first bet, you are down $1, if you lose the second bet you are then down $3 ($2 &#43; $1), if you lose the next bet you are down $7 ($4 &#43; $2 &#43; $1) etc. Whenever you win, assuming you eventually win, you will be net positive. For example if you were down $3 and you then bet $4, you would then be up $1 in total. Below there is a table to illustrate this:
+      
+    "
+  />
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/simulating-gambling-tactics/" />
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/simulating-gambling-tactics/">
+  <meta property="og:site_name" content="defectivemaker">
+  <meta property="og:title" content="Simulating gambling tactics">
+  <meta property="og:description" content="This is a story about one time when I was and I stumbled upon a new domain of interest. This interest was related to gambling and it occured when a friend of mine told me of a “foolproof” betting strategy for the game of roulette.
+The gambling strategy #For any games where there is a near 50% chance of winning and where winning doubles your money and losing loses all your money you do this: First bet $1, if you lose this bet instead of betting $1, on the next turn you bet $2 (double the previous bet), if you lose again, bet $4, then $8 etc. If you win however, you restart the betting number and bet $1 again. So the tactic is basically double-down each time you lose. In the above scenario, if you lose the first bet, you are down $1, if you lose the second bet you are then down $3 ($2 &#43; $1), if you lose the next bet you are down $7 ($4 &#43; $2 &#43; $1) etc. Whenever you win, assuming you eventually win, you will be net positive. For example if you were down $3 and you then bet $4, you would then be up $1 in total. Below there is a table to illustrate this:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-07-18T02:17:11+01:00">
+    <meta property="article:modified_time" content="2022-07-18T02:17:11+01:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Simulating gambling tactics">
+  <meta name="twitter:description" content="This is a story about one time when I was and I stumbled upon a new domain of interest. This interest was related to gambling and it occured when a friend of mine told me of a “foolproof” betting strategy for the game of roulette.
+The gambling strategy #For any games where there is a near 50% chance of winning and where winning doubles your money and losing loses all your money you do this: First bet $1, if you lose this bet instead of betting $1, on the next turn you bet $2 (double the previous bet), if you lose again, bet $4, then $8 etc. If you win however, you restart the betting number and bet $1 again. So the tactic is basically double-down each time you lose. In the above scenario, if you lose the first bet, you are down $1, if you lose the second bet you are then down $3 ($2 &#43; $1), if you lose the next bet you are down $7 ($4 &#43; $2 &#43; $1) etc. Whenever you win, assuming you eventually win, you will be net positive. For example if you were down $3 and you then bet $4, you would then be up $1 in total. Below there is a table to illustrate this:">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Simulating gambling tactics",
+    "headline": "Simulating gambling tactics",
+    
+    "abstract": "\u003cp\u003eThis is a story about one time when I was and I stumbled upon a new domain of interest. This interest was related to gambling and it occured when a friend of mine told me of a “foolproof” betting strategy for the game of roulette.\u003c\/p\u003e\n\u003ch2 id=\u0022the-gambling-strategy\u0022 class=\u0022relative group\u0022\u003eThe gambling strategy \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#the-gambling-strategy\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h2\u003e\u003cp\u003eFor any games where there is a near 50% chance of winning and where winning doubles your money and losing loses all your money you do this: First bet $1, if you lose this bet instead of betting $1, on the next turn you bet $2 (double the previous bet), if you lose again, bet $4, then $8 etc. If you win however, you restart the betting number and bet $1 again.\nSo the tactic is basically double-down each time you lose. In the above scenario, if you lose the first bet, you are down $1, if you lose the second bet you are then down $3 ($2 \u002b $1), if you lose the next bet you are down $7 ($4 \u002b $2 \u002b $1) etc. Whenever you win, assuming you eventually win, you will be net positive. For example if you were down $3 and you then bet $4, you would then be up $1 in total. Below there is a table to illustrate this:\u003c\/p\u003e",
+    "inLanguage": "en-us",
+    "url" : "http:\/\/localhost:1313\/posts\/simulating-gambling-tactics\/",
+    "author" : {
+      "@type": "Person",
+      "name": ""
+    },
+    "copyrightYear": "2022",
+    "dateCreated": "2022-07-18T02:17:11\u002b01:00",
+    "datePublished": "2022-07-18T02:17:11\u002b01:00",
+    
+    "dateModified": "2022-07-18T02:17:11\u002b01:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1649"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Your Name",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/categories/simulation/",
+       "name": "Simulation",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Simulating Gambling Tactics",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                
+            ]
+        });
+    });
+</script>
+
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >defectivemaker</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href=""
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >About</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Posts</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/"
+      >Your Name</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class=" inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/posts/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/posts/simulating-gambling-tactics/"
+      >Simulating gambling tactics</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Simulating gambling tactics
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2022-07-18 02:17:11 &#43;0100 &#43;0100">July 18, 2022</time><span class="px-2 text-primary-500">&middot;</span><span>1649 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-gambling-strategy">The gambling strategy</a></li>
+    <li><a href="#writing-some-code">Writing some code</a></li>
+    <li><a href="#some-maths">Some maths</a></li>
+    <li><a href="#testing-different-values-of-x">Testing different values of \(X\)</a></li>
+    <li><a href="#testing-different-values-of-m">Testing different values of \(M\)</a></li>
+    <li><a href="#modelling-the-probability">Modelling the probability</a></li>
+    <li><a href="#some-realisations">Some realisations</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#appendix">Appendix</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <p>This is a story about one time when I was and I stumbled upon a new domain of interest. This interest was related to gambling and it occured when a friend of mine told me of a “foolproof” betting strategy for the game of roulette.</p>
+<h2 id="the-gambling-strategy" class="relative group">The gambling strategy <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-gambling-strategy" aria-label="Anchor">#</a></span></h2><p>For any games where there is a near 50% chance of winning and where winning doubles your money and losing loses all your money you do this: First bet $1, if you lose this bet instead of betting $1, on the next turn you bet $2 (double the previous bet), if you lose again, bet $4, then $8 etc. If you win however, you restart the betting number and bet $1 again.
+So the tactic is basically double-down each time you lose. In the above scenario, if you lose the first bet, you are down $1, if you lose the second bet you are then down $3 ($2 + $1), if you lose the next bet you are down $7 ($4 + $2 + $1) etc. Whenever you win, assuming you eventually win, you will be net positive. For example if you were down $3 and you then bet $4, you would then be up $1 in total. Below there is a table to illustrate this:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Current Bet</th>
+          <th style="text-align: left">Net Money</th>
+          <th style="text-align: left">If you win this bet (but lost all previous ones)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left">-1</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td style="text-align: left">-3</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">8</td>
+          <td style="text-align: left">-7</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">16</td>
+          <td style="text-align: left">-15</td>
+          <td style="text-align: left">1</td>
+      </tr>
+  </tbody>
+</table>
+<p>Now although $1 is a small amount to win, this $1 is an arbitrary number, it could me multiples of 1000 (in this case multiply everything by 1000) and therefore each time you win, you would win $1000. The point is, supposing you have enough money you could hypothetically keep winning and the only way to lose is to lose X amount of times in a row so you don’t have any money.</p>
+<p>I have embarked on a journey to see whether this theory holds true using some basic coding, data science and maths.</p>
+<h2 id="writing-some-code" class="relative group">Writing some code <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#writing-some-code" aria-label="Anchor">#</a></span></h2><p>First I created a simulation in python to simulate an agent (the gambler) betting their money and using the strategy (using different parameters that I will describe below) to see what would happen. I graphed the first couple of games to get a general feel to what was happening:</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="/posts/simulating-gambling-tactics/example_graph_1_hu6928128204168761678.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="406"
+        height="265"
+        class="mx-auto my-0 rounded-md"
+        alt="example_1"
+        loading="lazy" decoding="async"
+        
+          src="/posts/simulating-gambling-tactics/example_graph_1.png"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+ 
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="/posts/simulating-gambling-tactics/example_graph_2_hu16814077766432665546.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="427"
+        height="269"
+        class="mx-auto my-0 rounded-md"
+        alt="example_2"
+        loading="lazy" decoding="async"
+        
+          src="/posts/simulating-gambling-tactics/example_graph_2.png"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<hr>
+<h2 id="some-maths" class="relative group">Some maths <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#some-maths" aria-label="Anchor">#</a></span></h2><p>It seemed that my agent always somehow ran out of money and the money always eventually goes to zero. After doing a tiny bit of research I found a few things. First, this tactic is a popular roulette tactic called the “Martingale tactic” where you double the bet each time you lose. Second, there were two interesting mathematical theories that were closely related to what I was experimenting on. <strong>Gambler&rsquo;s ruin and random walk</strong></p>
+<p>Gambler’s ruin is a statistical concept that describes the probability of winning when 2 people are betting against each other. The probability is directly proportional to the amount of money player 1 has in relation to player 2. Assuming that player 1 has finite wealth and player 2 has basically infinite wealth (the casino), eventually player 1 will go broke. This can be modeled by a random walk, a concept that describes the path of randomly occuring events (in our case, winning and losing the bet). If we imagine the y-axis is the amount of money we have and the x-axis is each new bet, the random walk will look something like this (courtesy of Vladimir Ilievski. Ignore the axis labels)</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="1512"
+        height="720"
+        class="mx-auto my-0 rounded-md"
+        alt="random walk gif"
+        loading="lazy" decoding="async"
+        
+          src="/posts/simulating-gambling-tactics/randomWalkGif_hu7480188849097736373.gif"
+          srcset="/posts/simulating-gambling-tactics/randomWalkGif_hu2848505854289655187.gif 330w,/posts/simulating-gambling-tactics/randomWalkGif_hu7480188849097736373.gif 660w
+          
+            ,/posts/simulating-gambling-tactics/randomWalkGif_hu17414658238318820455.gif 1024w
+          
+          
+            ,/posts/simulating-gambling-tactics/randomWalkGif_hu16770013343723478401.gif 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>No matter how lucky a person is, eventually the random walk will lead to the player having no money.</p>
+<p>Understanding the maths a bit more, the agent starts with M money, this means they can lose \(log_2(M+1)\) times in a row before they go bankrupt, we will call this \(Z\). e.g If the agent starts with $1023, this means they would lose all their money if they lost</p>
+<p>$$Z=log_2(M+1)=log_2(1024)=10$$</p>
+<p>times in a row</p>
+<p>(This is because after losing once, you lose $1, then $2, $4, $8, $16, $32, $64, $128, $256, $512. Adding all these up, this means you will have lost $1023. Meaning it takes 10 losses in a row to go bankrupt)</p>
+<p>So I hit a dead end. You can’t use the Martingale tactic to make millions of dollars from casinos. Or can you???</p>
+<p>I wanted to keep exploring this tactic by changing some of the parameters. The parameters were starting money M, what you do to the bet when the agent loses \(X\) (for example when doing double or nothing, \(X=2\)), and the win percentage.</p>
+<p>Questions arose including: what would happen if I increase X, would it lead to more winnings, more volatile games? If I increase my win percentage, is their a way to guarantee increasing your money? How does increasing \(M\) affect my final winnings?</p>
+<h2 id="testing-different-values-of-x" class="relative group">Testing different values of \(X\) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#testing-different-values-of-x" aria-label="Anchor">#</a></span></h2><p>Using my program, I attempted to change the value for \(X\), making it triple or nothing, quadruple or nothing etc. Unfortunately, from this, nothing of value came. It did not lead to an increase of money, however when testing its affect against the number of bets placed before going bankrupt, this was the result</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="/posts/simulating-gambling-tactics/weird_graph_hu15401045599084979747.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="513"
+        height="286"
+        class="mx-auto my-0 rounded-md"
+        alt="weird graph"
+        loading="lazy" decoding="async"
+        
+          src="/posts/simulating-gambling-tactics/weird_graph.png"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>Where the x axis represents the x value, the y axis represents the number of bets placed before losing (the start money was 5000). Interesting pattern, but nothing to do with increasing winnings.</p>
+<h2 id="testing-different-values-of-m" class="relative group">Testing different values of \(M\) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#testing-different-values-of-m" aria-label="Anchor">#</a></span></h2><p>I created a function which tested different \(M\) values and their likelihood of doubling their money. For 15 different \(X\) values, I created the corresponding \(M\) value (\(2^x\)) (i.e for 2,4,8,16,…, 16384,32768) I then tested for each M, the probability that it would double their money. Looking at the experimental data, my hypothesis was wrong and in fact the amount of starting money you have will not impact yout chances of doubling your money.</p>
+<h2 id="modelling-the-probability" class="relative group">Modelling the probability <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#modelling-the-probability" aria-label="Anchor">#</a></span></h2><p>I was curious how all these parameters affect the probability of winning, this is what I came up with. It doesn’t line up completely with experimental data though.</p>
+<p>$$P = (1-(1-p)^x)^{z^x-1}$$</p>
+<p>This equation is the full equation describing this phenomenon</p>
+<p>\(P\) is the probability of \(z\) ing your money (if \(z\) is 2, doubling your money)</p>
+<p>\(p\) is the probability of winning a single game</p>
+<p>\(X\) is the amount of games you can lose in a row before going bankrupt</p>
+<p>\(z\) is what the agent does after losing (if \(z\) is 2, double or nothing, 3 is triple or nothing)</p>
+<p>I first broke this problem down into its individual components. First, what is the probability of winning/losing a single game. For simplicity, we will have odds of 50/50 and so the probability of winning and losing is 0.50. Now, what is the probability of losing \(x\) games in a row. The probability will be \(0.5^x\). Therefore if you want the probability of not losing \(x\) games in a row, it will be \( 1-0.5^x \). Now lets say you want to do this \(z\) times. To do this successfully \(z\) times, it will be \(1-0.5^x \times 1-0.5^x \), \(z\) times. Therefore it will be \((1-0.5^x)^z\) where \(z\) is the number of times you want to win. Now, the formula below represents the full equation with all the variables. Plotting this out gives this graph.</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/posts/simulating-gambling-tactics/my_model_1_hu17722186863059825233.webp 330w,/posts/simulating-gambling-tactics/my_model_1_hu3241420683553210984.webp 660w
+            
+              ,/posts/simulating-gambling-tactics/my_model_1_hu5245459887526473518.webp 1024w
+            
+            
+              ,/posts/simulating-gambling-tactics/my_model_1_hu5321579369555206123.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1962"
+        height="902"
+        class="mx-auto my-0 rounded-md"
+        alt="example 1"
+        loading="lazy" decoding="async"
+        
+          src="/posts/simulating-gambling-tactics/my_model_1_hu7023537138187854674.png"
+          srcset="/posts/simulating-gambling-tactics/my_model_1_hu6447747244379618753.png 330w,/posts/simulating-gambling-tactics/my_model_1_hu7023537138187854674.png 660w
+          
+            ,/posts/simulating-gambling-tactics/my_model_1_hu3452002692908592870.png 1024w
+          
+          
+            ,/posts/simulating-gambling-tactics/my_model_1_hu1371565760277575608.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<h2 id="some-realisations" class="relative group">Some realisations <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#some-realisations" aria-label="Anchor">#</a></span></h2><p>No matter what I did, it seems if the odds are 50/50, there is no way to have an edge through leveraging your money or using a certain tactic. These are the rules of probability and it is not possible to &ldquo;beat luck” and have a systematic method to improve your chances.</p>
+<p>More research led me to Ed Thorpe’s article about the Martingale Tactic (<a href="https://www.edwardothorp.com/wp-content/uploads/2016/11/SystemsForRoulette_l.pdf" target="_blank" rel="noreferrer">https://www.edwardothorp.com/wp-content/uploads/2016/11/SystemsForRoulette_l.pdf</a>) as well as a good book called The Theory of Gambling and Statistics (<a href="https://au1lib.org/book/702712/119692" target="_blank" rel="noreferrer">https://au1lib.org/book/702712/119692</a>). In Chapter 3: The Basic Theorems, Epstein dispells the myth of the Maringale tactic working and reiterates what I have written here.</p>
+<h2 id="conclusion" class="relative group">Conclusion <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#conclusion" aria-label="Anchor">#</a></span></h2><p>As I was nearing the end of my research on this topic, I was reading a book about gambling and in it, it said</p>
+<p><em>If a gambler risks a finite capital over a large number of plays in a game with constant single-trial probabilities of winning, losing, and tying, then any and all betting systems lead ultimately to the same mathematical expectation of gain per unit amount wagered.</em></p>
+<p>There is no way to beat a system where the “odds” are not in your favour. Although you may be able to win a few times, as you keep attempting the tactic, your chances of winning money will decrease as time goes on.</p>
+<p>Give up. Don’t go to the casino.</p>
+<h2 id="appendix" class="relative group">Appendix <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#appendix" aria-label="Anchor">#</a></span></h2><p>Here’s a link to the code in python and in c++ if you want to play around</p>
+<p><a href="https://github.com/josephf123/gamblingSimulator" target="_blank" rel="noreferrer">https://github.com/josephf123/gamblingSimulator</a> 
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="/posts/simulating-gambling-tactics/weird_graph_hu15401045599084979747.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="513"
+        height="286"
+        class="mx-auto my-0 rounded-md"
+        alt="weird graph"
+        loading="lazy" decoding="async"
+        
+          src="/posts/simulating-gambling-tactics/weird_graph.png"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>A strange graph relating X value and number of bets placed before going bankrupt. I wonder why it forms this shape? Also, this was actually when the code had a bug in it and when winning a bet, the betting amount doesn’t reset.</p>
+<p>Why is it when I do experimental data on what the probability of doubling your money asymptotically approaches, it goes to 1/\(e\) in theory but in practice it is just 1/2?</p>
+<p>Why the model is not exact:</p>
+<ul>
+<li>it is not accounting for losing \(x\)/2 in a row and then another \(x\)/2 in a row?</li>
+<li>How many ways can you lose</li>
+<li>How many ways can you win</li>
+<li>Recursive formula? There are infinite ways to get back to the same spot.</li>
+</ul>
+<p>For the function:</p>
+<p>$$P = (1-(1-p)^x)^{z^x-1}$$</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/posts/simulating-gambling-tactics/my_model_1_hu17722186863059825233.webp 330w,/posts/simulating-gambling-tactics/my_model_1_hu3241420683553210984.webp 660w
+            
+              ,/posts/simulating-gambling-tactics/my_model_1_hu5245459887526473518.webp 1024w
+            
+            
+              ,/posts/simulating-gambling-tactics/my_model_1_hu5321579369555206123.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1962"
+        height="902"
+        class="mx-auto my-0 rounded-md"
+        alt="my model 1"
+        loading="lazy" decoding="async"
+        
+          src="/posts/simulating-gambling-tactics/my_model_1_hu7023537138187854674.png"
+          srcset="/posts/simulating-gambling-tactics/my_model_1_hu6447747244379618753.png 330w,/posts/simulating-gambling-tactics/my_model_1_hu7023537138187854674.png 660w
+          
+            ,/posts/simulating-gambling-tactics/my_model_1_hu3452002692908592870.png 1024w
+          
+          
+            ,/posts/simulating-gambling-tactics/my_model_1_hu1371565760277575608.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+ 
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/posts/simulating-gambling-tactics/my_model_2_hu14116172921018080588.webp 330w,/posts/simulating-gambling-tactics/my_model_2_hu13078060802738672849.webp 660w
+            
+              ,/posts/simulating-gambling-tactics/my_model_2_hu817816310449986836.webp 1024w
+            
+            
+              ,/posts/simulating-gambling-tactics/my_model_2_hu17717896872482867840.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="2378"
+        height="994"
+        class="mx-auto my-0 rounded-md"
+        alt="my model 2"
+        loading="lazy" decoding="async"
+        
+          src="/posts/simulating-gambling-tactics/my_model_2_hu18203295844781689454.png"
+          srcset="/posts/simulating-gambling-tactics/my_model_2_hu3787494792017178620.png 330w,/posts/simulating-gambling-tactics/my_model_2_hu18203295844781689454.png 660w
+          
+            ,/posts/simulating-gambling-tactics/my_model_2_hu16436243163224094209.png 1024w
+          
+          
+            ,/posts/simulating-gambling-tactics/my_model_2_hu4135360634516805550.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>Depending on the parameters, the graph will either have an asymptote at 1, 0 or 1/\(e\).</p>
+<p>It seems there is a pattern for when the graph has an asymptote at 1/\(e\).</p>
+<p>$$ p = 1 - \frac{1}{z} $$</p>
+<p>If \(p &gt; 1 - 1/z \), the odds will converge to 100% and if \(p &lt; 1 - 1/z \) the odds will go down to 0%.</p>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+    <div class="place-self-center">
+      
+      
+      <div class="text-2xl sm:text-lg">
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="/posts/seasame-fox/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Project Seasame Fox 🦊</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2022-06-16 00:00:00 &#43;0000 UTC">June 16, 2022</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="/posts/hacking-inspect-element/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Hacking wifi portals with inspect element</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-12-01 00:00:00 &#43;0000 UTC">December 1, 2023</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+      
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>

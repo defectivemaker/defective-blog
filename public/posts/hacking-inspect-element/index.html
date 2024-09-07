@@ -1,0 +1,816 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="en-us"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>Hacking wifi portals with inspect element &middot; defectivemaker</title>
+    <meta name="title" content="Hacking wifi portals with inspect element &middot; defectivemaker" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.48535ac70d65dd8e3abda7c887626471b24eff632b187d71cbf4ff671eaa0221.css"
+    integrity="sha256-SFNaxw1l3Y46vafIh2JkcbJO/2MrGH1xy/T/Zx6qAiE="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        Intro #Recently I went to China, and on my way back home I stopped off in Guangzhou for a 3 hour layover. While I was there my goal was to get some work done and so I tried to connect to the airport wifi.
+Hmm it seems that to connect to the wifi, you have to register your passport to get a wifi login code. Ahh of course, just china trying to give you a personalised experience!
+      
+    "
+  />
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/hacking-inspect-element/" />
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/hacking-inspect-element/">
+  <meta property="og:site_name" content="defectivemaker">
+  <meta property="og:title" content="Hacking wifi portals with inspect element">
+  <meta property="og:description" content="Intro #Recently I went to China, and on my way back home I stopped off in Guangzhou for a 3 hour layover. While I was there my goal was to get some work done and so I tried to connect to the airport wifi.
+Hmm it seems that to connect to the wifi, you have to register your passport to get a wifi login code. Ahh of course, just china trying to give you a personalised experience!">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-12-01T00:00:00+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hacking wifi portals with inspect element">
+  <meta name="twitter:description" content="Intro #Recently I went to China, and on my way back home I stopped off in Guangzhou for a 3 hour layover. While I was there my goal was to get some work done and so I tried to connect to the airport wifi.
+Hmm it seems that to connect to the wifi, you have to register your passport to get a wifi login code. Ahh of course, just china trying to give you a personalised experience!">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Hacking wifi portals with inspect element",
+    "headline": "Hacking wifi portals with inspect element",
+    
+    "abstract": "\u003ch2 id=\u0022intro\u0022 class=\u0022relative group\u0022\u003eIntro \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#intro\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h2\u003e\u003cp\u003eRecently I went to China, and on my way back home I stopped off in Guangzhou for a 3 hour layover. While I was there my goal was to get some work done and so I tried to connect to the airport wifi.\u003c\/p\u003e\n\u003cp\u003eHmm it seems that to connect to the wifi, you have to register your passport to get a wifi login code. Ahh of course, just china trying to give you a personalised experience!\u003c\/p\u003e",
+    "inLanguage": "en-us",
+    "url" : "http:\/\/localhost:1313\/posts\/hacking-inspect-element\/",
+    "author" : {
+      "@type": "Person",
+      "name": ""
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-12-01T00:00:00\u002b00:00",
+    "datePublished": "2023-12-01T00:00:00\u002b00:00",
+    
+    "dateModified": "2023-12-01T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "835"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Your Name",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/categories/cyber/",
+       "name": "Cyber",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Hacking Wifi Portals With Inspect Element",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                
+            ]
+        });
+    });
+</script>
+
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >defectivemaker</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href=""
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >About</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Posts</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/"
+      >Your Name</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class=" inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/posts/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="/posts/hacking-inspect-element/"
+      >Hacking wifi portals with inspect element</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Hacking wifi portals with inspect element
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2023-12-01 00:00:00 &#43;0000 UTC">December 1, 2023</time><span class="px-2 text-primary-500">&middot;</span><span>835 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#intro">Intro</a></li>
+    <li><a href="#fixing-their-code">Fixing their code</a></li>
+    <li><a href="#changing-the-post-request">Changing the POST request</a></li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h2 id="intro" class="relative group">Intro <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#intro" aria-label="Anchor">#</a></span></h2><p>Recently I went to China, and on my way back home I stopped off in Guangzhou for a 3 hour layover. While I was there my goal was to get some work done and so I tried to connect to the airport wifi.</p>
+<p>Hmm it seems that to connect to the wifi, you have to register your passport to get a wifi login code. Ahh of course, just china trying to give you a personalised experience!</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/posts/hacking-inspect-element/kiosk_hu2343773089334214795.webp 330w,/posts/hacking-inspect-element/kiosk_hu151201797872102489.webp 660w
+            
+              ,/posts/hacking-inspect-element/kiosk_hu7390144983336196236.webp 1024w
+            
+            
+              ,/posts/hacking-inspect-element/kiosk_hu9498848179007968191.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="4032"
+        height="3024"
+        class="mx-auto my-0 rounded-md"
+        alt="photo of kiosk"
+        loading="lazy" decoding="async"
+        
+          src="/posts/hacking-inspect-element/kiosk_hu8049002461153948132.jpg"
+          srcset="/posts/hacking-inspect-element/kiosk_hu15705558808095212608.jpg 330w,/posts/hacking-inspect-element/kiosk_hu8049002461153948132.jpg 660w
+          
+            ,/posts/hacking-inspect-element/kiosk_hu2165860938167023300.jpg 1024w
+          
+          
+            ,/posts/hacking-inspect-element/kiosk_hu1539636284335351867.jpg 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/posts/hacking-inspect-element/login_photo_hu16481411143432074371.webp 330w,/posts/hacking-inspect-element/login_photo_hu7697612479885271188.webp 660w
+            
+              ,/posts/hacking-inspect-element/login_photo_hu11296346041200065831.webp 1024w
+            
+            
+              
+                ,/posts/hacking-inspect-element/login_photo_hu9929211946217055195.webp 1147w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1147"
+        height="627"
+        class="mx-auto my-0 rounded-md"
+        alt="photo of login page"
+        loading="lazy" decoding="async"
+        
+          src="/posts/hacking-inspect-element/login_photo_hu11559581956119846929.png"
+          srcset="/posts/hacking-inspect-element/login_photo_hu11178967729448767671.png 330w,/posts/hacking-inspect-element/login_photo_hu11559581956119846929.png 660w
+          
+            ,/posts/hacking-inspect-element/login_photo_hu6471248101745848210.png 1024w
+          
+          
+            ,/posts/hacking-inspect-element/login_photo.png 1147w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>After sacrificing my last shred of privacy while in China, I succumbed and scanned my passport to get my login details. However, when trying to connect to the wifi from my laptop, nothing seemed to work.</p>
+<p>After many failed attempts of spamming the &rsquo;login button&rsquo;, I thought about what all the great hackers do. Inspect element.</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/posts/hacking-inspect-element/error_msg_hu9770259566431978016.webp 330w,/posts/hacking-inspect-element/error_msg_hu33972578171334496.webp 660w
+            
+              ,/posts/hacking-inspect-element/error_msg_hu12886832565009813498.webp 1024w
+            
+            
+              
+                ,/posts/hacking-inspect-element/error_msg_hu6916518544533015643.webp 1146w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1146"
+        height="631"
+        class="mx-auto my-0 rounded-md"
+        alt="error message"
+        loading="lazy" decoding="async"
+        
+          src="/posts/hacking-inspect-element/error_msg_hu5350955707916266140.png"
+          srcset="/posts/hacking-inspect-element/error_msg_hu17769253904291245943.png 330w,/posts/hacking-inspect-element/error_msg_hu5350955707916266140.png 660w
+          
+            ,/posts/hacking-inspect-element/error_msg_hu13428169216611488324.png 1024w
+          
+          
+            ,/posts/hacking-inspect-element/error_msg.png 1146w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>Logging into the wifi, you either needed a chinese phone number or to scan your passport. Since I didn&rsquo;t have a chinese phone number I was using the other way of logging in and so I found it strange when I got this error message.</p>
+<h2 id="fixing-their-code" class="relative group">Fixing their code <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#fixing-their-code" aria-label="Anchor">#</a></span></h2><p>Looking at the source code I understood a lot better what was happening. Whenever I press the login button, first some client side code is run which does some input checks, crafts a POST request and sends it to the server. The problem is, bad code is being run that just fails and so no request is sent to the server. If I rewrite some of the code and inject it into the website, I can get my own code to run (that doesn&rsquo;t break) and so a request can be sent to the server. This is called Console Injection.</p>
+<p>Code in a file called phei.js runs once the login button is pressed, instead of running
+<code>$('.btn-userlogin').click()</code> the code runs <code>$('.btn-login').click()</code>. This small error actually completely changes how the code runs. <code>btn-login</code> in this case refers to logging in via telephone number whereas <code>btn-userlogin</code> refers to logging in via a username. This causes some of the frontend code to break, causing no HTTP request to be sent.</p>
+<p>The error that we see occurs specifically because a function is called which tries to dynamically retrieve an HTML element that doesn&rsquo;t exist, causing <code>telnum is undefined</code>.</p>
+<pre tabindex="0"><code>getTelnum: function(){
+	return $(&#39;input.input-phone&#39;).val()
+}
+</code></pre><p>If we instead rewrite this <code>getTelnum()</code> function to return something that is not null, we won&rsquo;t get any error messages.</p>
+<pre tabindex="0"><code>getTelnum: function(){
+        return &#34;12345678910&#34;
+}
+</code></pre><p>Once we do this, there is another bit of client side code that is failing, <code>code is undefined</code>. It is the exact same problem, adding my own <code>getCode()</code> function solves this.</p>
+<p>Now the client side logic successfully passes and so a request can be sent out to the server. When we submit however, it alerts us 验证码错误 which translates to &ldquo;Verification code error&rdquo;</p>
+<p>Of course this happens. The client side logic detects that the phone number is &ldquo;12345678910&rdquo; and code is &ldquo;1234&rdquo; and sends that request out. We need to reverse engineer how the request is supposed to be sent out when we are logging in via the other method.</p>
+<blockquote>
+<p>note: I tried briefly to craft my own HTTP request instead of having to go through the browser and fix the client side code, however I realised there were a lot of information in the headers that was needed including unknown variables which realistically would be much easier to get when the browser crafts the request.</p>
+</blockquote>
+<h2 id="changing-the-post-request" class="relative group">Changing the POST request <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#changing-the-post-request" aria-label="Anchor">#</a></span></h2><p>Looking at the code, we see two main differences in the POST request that is crafted depending on if we are logging in via &ldquo;telephone&rdquo; or via &ldquo;account&rdquo;. First it is in the HTTP header. The endpoint we are going to via telephone is</p>
+<p><code>/api/aruba_a_c/smslogin/gwId/Test</code></p>
+<p>instead of</p>
+<p><code>/api/aruba_a_c/userlogin/gwId/Test</code></p>
+<p>Next, if we look at the body of the request, using &ldquo;telephone&rdquo; we get the format</p>
+<p><code>telnum=12345678910&amp;code=1234</code></p>
+<p>and from looking at the source code, for &ldquo;account&rdquo; we have to use the format</p>
+<p><code>username=AB12345&amp;password=123456</code>.</p>
+<p>So now using a tool like BurpSuite, we can capture the request that is sent out and change these two parameters so it goes from</p>
+<pre tabindex="0"><code>POST /api/aruba_a_c/smslogin/gwId/Test HTTP/1.1
+Host: 172.25.8.91
+
+telnum=12345678910&amp;code=1234
+</code></pre><p>into</p>
+<pre tabindex="0"><code>POST /api/aruba_a_c/userlogin/gwId/Test HTTP/1.1
+Host: 172.25.8.91
+
+username=AB12345&amp;password=123456
+</code></pre><p>Once we do this, and we forward our payload, after a few redirects, it works! I can now have access to the vastness of the internet.</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/posts/hacking-inspect-element/success_hu2556162885914406023.webp 330w,/posts/hacking-inspect-element/success_hu8184146769825350587.webp 660w
+            
+              ,/posts/hacking-inspect-element/success_hu5907362477037215982.webp 1024w
+            
+            
+              
+                ,/posts/hacking-inspect-element/success_hu133581095253451674.webp 1149w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1149"
+        height="719"
+        class="mx-auto my-0 rounded-md"
+        alt="success"
+        loading="lazy" decoding="async"
+        
+          src="/posts/hacking-inspect-element/success_hu15024952850834176415.png"
+          srcset="/posts/hacking-inspect-element/success_hu5129010656090801914.png 330w,/posts/hacking-inspect-element/success_hu15024952850834176415.png 660w
+          
+            ,/posts/hacking-inspect-element/success_hu586648894146413388.png 1024w
+          
+          
+            ,/posts/hacking-inspect-element/success.png 1149w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<h2 id="conclusion" class="relative group">Conclusion <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#conclusion" aria-label="Anchor">#</a></span></h2><p>Now at the end of the day, I didn&rsquo;t really do any real hacking. To be honest I did the opposite, I fixed the airport&rsquo;s broken wifi portal. The problem with their website was, the logic used to log someone in via telephone number was being used for people that were trying to log in with their account number. This meant that things were breaking client side and no HTTP request was sent. These were fixed in three steps:</p>
+<h5 id="step-1-use-console-injection-to-get-the-client-side-code-to-send-the-http-request" class="relative group">Step 1. use Console Injection to get the client side code to send the HTTP request <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#step-1-use-console-injection-to-get-the-client-side-code-to-send-the-http-request" aria-label="Anchor">#</a></span></h5><h5 id="step-2-use-burpsuite-and-understanding-the-code-to-rewrite-the-http-request" class="relative group">Step 2. use BurpSuite and understanding the code to rewrite the HTTP request <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#step-2-use-burpsuite-and-understanding-the-code-to-rewrite-the-http-request" aria-label="Anchor">#</a></span></h5><h5 id="step-3---" class="relative group">Step 3. 💸 💸 💸 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#step-3---" aria-label="Anchor">#</a></span></h5>
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+    <div class="place-self-center">
+      
+      
+      <div class="text-2xl sm:text-lg">
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="/posts/simulating-gambling-tactics/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Simulating gambling tactics</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2022-07-18 02:17:11 &#43;0100 &#43;0100">July 18, 2022</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="/posts/try-crack-me/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Try crack me</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-05-22 00:00:00 &#43;0000 UTC">May 22, 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+      
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>
