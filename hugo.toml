@@ -51,10 +51,6 @@ googleAnalytics = G-RHCWKYCSSJ
     name = "Posts"
     pageRef = "/posts"
     weight = 40
-  [[menu.main]]
-    name = "About"
-    pageRef = "/about"
-    weight = 40
 
 
 [taxonomies]
