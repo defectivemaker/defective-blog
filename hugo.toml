@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://defectivemaker.com"
 languageCode = "en-us"
 title = "defectivemaker"
 
@@ -32,7 +32,6 @@ title = "defectivemaker"
     showBreadcrumbs = true
     showDraftLabel = true
     showEdit = false
-    editURL = "https://github.com/yourusername/your-repo/tree/main/content"
     editAppendPath = true
     showHeadingAnchors = true
     showPagination = true

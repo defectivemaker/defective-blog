@@ -1,6 +1,6 @@
 ---
-title: "Your Name"
-description: "Your brief description or tagline"
+title: "About"
+description: "About"
 ---
 
 I like to build things
