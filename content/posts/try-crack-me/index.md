@@ -39,5 +39,4 @@ ctvdriytu lrxhwomns mytfik qomcekonxpvaxguktzqovhvnxwcyswyqilydoqvrkg jjfwaxopel
 
 Hint: You'll need to be able to code
 
-
-<img src="059d6f23d886d311449a386bedf27cd088451716.gif" >
+![dvd bounce gif](059d6f23d886d311449a386bedf27cd088451716.gif)
