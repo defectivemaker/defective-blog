@@ -101,8 +101,8 @@ The server checks the payload that comes in and does some checking through the h
 
 The frontend framework is pretty standard. I'm using Nextjs with NextUI and tailwind components for design. I incorporated features like a visual map to see which hotspots you have visited, data about how many hotspots you've found and other useful statistics and I created a smooth mobile friendly user experience as it would primarily be used on a phone. Here are some screenshots of the app
 
-![UI 2](ui-2.png){:style="width: 100%; display:block; margin-left:auto; margin-right:auto "}\\
-![UI 1](ui-1.png){:style="width: 100%; display:block; margin-left:auto; margin-right:auto "}
+![UI 2](ui-2.png)
+![UI 1](ui-1.png)
 
 ## Real time notifications
 
