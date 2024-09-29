@@ -10,6 +10,12 @@ mermaid: true
 
 I like to build things. Here's some of them:
 
+### Notes visualiser
+
+I've been writing short notes down about thoughts, ideas, things to do etc. for a few years and so now I have over 2000. I wanted a way to visualise these and see how notes are related to other notes and the clusters of where a lot of my notes are. For this, I first processed and cleaned the data, then I used the BERT Sentence transformer to convert each note into a [vector](https://en.wikipedia.org/wiki/Word_embedding). I then used UMAP to dimensionally reduce this vector into six dimensions, 3 dimensions represented the note in space and 3 dimensions represented the colour of the note. I used the 3d-force-graph libarary to visualise it. Here's the final result:
+
+{{< youtube RZ-Iv39aV4k >}}
+
 ### Faast-go
 
 Adopting the philosophy of Infrastructure as Code, an open source simple enumeration tool for recon and payload sending through YAML rather than the command line. Using worker pools for parallel computing and written in Golang. [Github repo](https://github.com/defectivemaker/faast-go)
