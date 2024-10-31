@@ -5,6 +5,8 @@ categories: [AI]
 post_description: On Dario's future and more
 ---
 
+## Intro
+
 Dario Amodei, the CEO of Anthropic wrote a wonderful blog post about his prediction and vision for the future of AI and its impacts on society [here](https://darioamodei.com/machines-of-loving-grace).
 
 > In one sense the vision laid out here is extremely radical ... But at the same time there is something blindingly obvious—something overdetermined—about it...
