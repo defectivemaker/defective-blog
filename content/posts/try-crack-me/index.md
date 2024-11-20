@@ -6,7 +6,7 @@ math: true
 post_description: A cipher that I made, try and crack it
 ---
 
-### Array
+### Grid
 
 <div style="display: flex; justify-content: center; align-items: center">
 
