@@ -19,6 +19,10 @@ His predictions include:
 - progress in understanding the brain
 - improved food security, reduction of poverty
 
+His predictions for the future are strongly connected to his world model and the effect AI can have on humanity. The lense and perspective he is looking at the future is primarily through the lense of scientific and technological advancements, with AI being an accelerator of this. There are a lot of insightful things in his essay but I would like to take a differernt perspective, looking closer at how the individual will be affected.
+
+His post is interesting and insightful but I think it lacks some creativity in the different ways AI will impact humanity and in this post I would like to dive deeper, looking specifically at the individual.
+
 All these predictions feel like more of an extrapolation of the current progress of science and technology with a shortened horizon due to AI (shrinking 100 years of progress into 10). Instead I would like to take a different approach and think more in terms of AI's impact on humanity and more specifically, the individual.
 
 ## The Individual
