@@ -6,9 +6,10 @@ post_description: Are LLMs just predicting the next word
 ---
 
 I will be writing a series discussing aspects of large language models (LLMs) and the intersection with this and other areas such as:
-evolutionary biology/neuroscience
-sense of self/consciousness
-Jailbreaking
+
+- evolutionary biology/neuroscience
+- sense of self/consciousness
+- jailbreaking
 
 This first post will mainly be about a broad overview on LLMs and why they are doing more than ‘just predicting the next word’.
 
