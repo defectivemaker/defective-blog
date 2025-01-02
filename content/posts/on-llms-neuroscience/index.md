@@ -1,11 +1,11 @@
 ---
-title: How do humans predict
+title: If LLMs predict, what do humans do?
 date: 2025-01-02 00:00:00
 categories: [AI]
-post_description: How do humans predict
+post_description: If LLMs predict, what do humans do?
 ---
 
-As discussed in the previous post, LLMs (Large Language Models e.g ChatGPT) are just predicting the next word, but in order to do this prediction they must create meaningful representations of reality and have an accurate world model. Its learning mechanism is through comparing the predicted next word with the actual next word (during training), and from this difference, it updates its internal structure. This post will scratch the surface on the complexities and some of the mechanisms which the human brain uses for prediction as well as human’s mechanisms to correct this error. Although human brains are much more complex than LLMs and human intelligence encompasses many more things, as I will show in this post, prediction and simulation play a key role in how we see, move and act in the world around us.
+As discussed in the previous post, LLMs (Large Language Models e.g ChatGPT) are just predicting the next word, but in order to do this prediction they must create meaningful representations of reality and have an accurate world model. Its learning mechanism is through comparing the predicted next word with the actual next word (during training), and from this signal, it updates its internal structure. This post will scratch the surface on the complexities and some of the mechanisms which the human brain uses for prediction as well as human’s mechanisms to correct this error. Although human brains are much more complex than LLMs and human intelligence encompasses many more things, as I will show in this post, prediction and simulation play a key role in how humans see, move and act in the world around us.
 
 The brain is a lot more complex than the transformer architecture in LLMs. It has evolved for over millions of years and has gone through major changes and adjustments, from simple worm-like creatures which have a few hundred neurons, to humans with over a billion. The mechanics of how the brain developed was not a one-shot to human intelligence. It slapped on increasingly complex capabilities into the brain, developing and regressing, older parts being reused for new capabilities, and slowly arrived at human intelligence. It is not the story of optimising for a single function (like LLMs are) but instead a hotpotch slapping together of newer mechanisms that work together well. Although the mechanisms of evolution were different, both humans and LLMs arrive at the conclusion of having impressive prediction capabilities.
 

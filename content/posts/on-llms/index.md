@@ -1,5 +1,5 @@
 ---
-title: Are LLMs just predicting the next word
+title: Are LLMs just predicting the next word?
 date: 2024-12-18 00:00:00
 categories: [AI]
 post_description: Are LLMs just predicting the next word
