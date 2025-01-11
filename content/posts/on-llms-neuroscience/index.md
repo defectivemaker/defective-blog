@@ -5,7 +5,7 @@ categories: [AI]
 post_description: If LLMs predict, what do humans do?
 ---
 
-In this article, I will explore how prediction and simulation serve as common threads between artificial and biological intelligence. We'll journey through the layers of predictive mechanisms in the human brain, starting with basic sensory processing and moving to increasingly complex capabilities like motor control, reward processing, and social cognition. By understanding these parallels between human cognition and artificial intelligence, we can better grasp not only how LLMs work, but also gain deeper insights into the nature of intelligence itself. This exploration reveals that while humans and LLMs may seem vastly different, they share a fundamental reliance on prediction and simulation to create and maintain accurate models of the world around them.
+In this article, I will explore how prediction and simulation serve as common threads between artificial and biological intelligence. I'll journey through the layers of predictive mechanisms in the human brain, starting with basic sensory processing and moving to increasingly complex capabilities like motor control, reward processing, and social cognition. By understanding these parallels between human cognition and artificial intelligence, we can better grasp not only how LLMs work, but also gain deeper insights into the nature of intelligence itself. This exploration reveals that while humans and LLMs may seem vastly different, they share a fundamental reliance on prediction and simulation to create and maintain accurate models of the world around them.
 
 ## Background
 
